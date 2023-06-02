@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  back:
+    build: ./back
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    # depends_on:
+    #   - postgres
